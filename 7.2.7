@@ -1,0 +1,65 @@
+gg.alert("SCRIPT FOR BLOCK STRIKE 7.2.7")
+function Main()
+ meu = gg.choice({'Menu','Authors','Exit'},nil, 'Script Block Strike 7.2.7')
+if meu == nil then else
+if meu == 1 then opcao1() end
+if meu== 2 then opcao2() end
+if meu == 3 then os.exit() end end end
+
+function opcao1()
+menu = gg.multiChoice({'Cheat1','Cheat2','Cheat3','Return'},nil, 'Script Block Strike 7.2.7 - Menu')
+if menu == nil then else
+if menu[1] == true then cheat1() end
+if menu[2] == true then cheat2() end
+if menu[3] == true then cheat3() end
+if menu[4] == true then voltar() end end end
+
+function cheat1()
+gg.toast('cheat1 ON')
+end
+
+function cheat2()
+gg.toast('cheat2 ON')
+end
+
+function cheat3()
+gg.toast('cheat3 ON')
+end
+
+function voltar()
+gg.setVisible(false)
+gg.setVisible(true)
+end
+
+function opcao2()
+menu = gg.choice({'BLOCKSTRIKEHACKER - Channel','Yabi - Channel','Discord Group','Return'},nil, 'Script Block Strike - Authors')
+if menu == nil then else
+if menu == 1 then cheat1() end
+if menu == 2 then cheat2() end
+if menu == 3 then cheat3() end
+if menu == 4 then voltar() end end end
+
+function cheat1()
+gg.toast('cheat1 ON')
+end
+
+function cheat2()
+gg.toast('cheat2 ON')
+end
+
+function cheat3()
+gg.toast('cheat3 ON')
+end
+
+function voltar()
+gg.setVisible(false)
+gg.setVisible(true)
+end
+
+while(true)
+do
+menuend = 0
+if gg.isVisible(true) then gg.setVisible(false)
+menuend = 1 end
+if menuend == 1 then Main() end end
+
